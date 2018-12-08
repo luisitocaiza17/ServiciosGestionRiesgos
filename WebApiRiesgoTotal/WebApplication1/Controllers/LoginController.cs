@@ -6,6 +6,7 @@ using System.Web.Http;
 using System.Web.Http.Description;
 using System.Collections.Generic;
 using WebApplication1.Entidades;
+using System.Web.Http.Cors;
 
 namespace Saludsa.WebApiBrokers.Controllers
 {
@@ -32,6 +33,7 @@ namespace Saludsa.WebApiBrokers.Controllers
         [HttpGet()]
 
         [ResponseType(typeof(string))]
+         [EnableCorsAttribute("http://localhost:44522", "*", "*")]
         public HttpResponseMessage LoginVerificacion(string usuario, string password)
         {
             UsuarioEntity usuarioComprobado = new UsuarioEntity();

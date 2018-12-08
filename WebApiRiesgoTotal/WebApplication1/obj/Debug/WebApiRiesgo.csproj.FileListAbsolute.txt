@@ -43,3 +43,6 @@ D:\Maestria_Software\Gestion de Riesgos\AppElReisgo\ServiciosGestionRiesgos\WebA
 D:\Maestria_Software\Gestion de Riesgos\AppElReisgo\ServiciosGestionRiesgos\WebApiRiesgoTotal\WebApplication1\bin\System.Net.Http.Formatting.xml
 D:\Maestria_Software\Gestion de Riesgos\AppElReisgo\ServiciosGestionRiesgos\WebApiRiesgoTotal\WebApplication1\bin\System.Web.Http.xml
 D:\Maestria_Software\Gestion de Riesgos\AppElReisgo\ServiciosGestionRiesgos\WebApiRiesgoTotal\WebApplication1\bin\System.Web.Http.WebHost.xml
+D:\Maestria_Software\Gestion de Riesgos\AppElReisgo\ServiciosGestionRiesgos\WebApiRiesgoTotal\WebApplication1\bin\System.Web.Cors.dll
+D:\Maestria_Software\Gestion de Riesgos\AppElReisgo\ServiciosGestionRiesgos\WebApiRiesgoTotal\WebApplication1\bin\System.Web.Http.Cors.dll
+D:\Maestria_Software\Gestion de Riesgos\AppElReisgo\ServiciosGestionRiesgos\WebApiRiesgoTotal\WebApplication1\bin\System.Web.Http.Cors.xml
