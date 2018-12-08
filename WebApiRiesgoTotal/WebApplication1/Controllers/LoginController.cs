@@ -31,25 +31,36 @@ namespace Saludsa.WebApiBrokers.Controllers
         /// <response code="500">Si existe un error interno</response>
         [Route("LoginVerificacion")]
         [HttpGet()]
-
         [ResponseType(typeof(string))]
-         [EnableCorsAttribute("http://localhost:44522", "*", "*")]
+         //[EnableCorsAttribute("http://localhost:44522", "*", "*")]//para permitir CORS 
         public HttpResponseMessage LoginVerificacion(string usuario, string password)
         {
             UsuarioEntity usuarioComprobado = new UsuarioEntity();
             Msg respuesta = new Msg();
-            if (usuario.Equals("admin") && password.Equals("123456"))
+            try
             {
+                if (usuario.Equals("admin") && password.Equals("123456"))
+                {
 
-                usuarioComprobado.id = 1;
-                usuarioComprobado.nombres = "administrador";
-                usuarioComprobado.apellidos = "pruebas";
-                
+                    usuarioComprobado.id = 1;
+                    usuarioComprobado.nombres = "administrador";
+                    usuarioComprobado.apellidos = "pruebas";
+                    respuesta.Datos = usuarioComprobado;
+                    respuesta.Estado = "OK";
+                    return Request.CreateResponse(System.Net.HttpStatusCode.OK, respuesta);
+                }
+                else
+                {
+                    respuesta.Datos = usuarioComprobado;
+                    respuesta.Estado = "False";
+                    return Request.CreateResponse(System.Net.HttpStatusCode.OK, respuesta);
+                }
             }
-            respuesta.Datos = usuarioComprobado;
-            respuesta.Estado = "OK";
-            respuesta.Mensajes = "Correcto";
-            return Request.CreateResponse(System.Net.HttpStatusCode.OK, respuesta);
+            catch(Exception e)
+            {
+                respuesta.Mensajes = e.Message.ToString();
+                return Request.CreateResponse(System.Net.HttpStatusCode.InternalServerError, respuesta);
+            }            
         }
 
     }
