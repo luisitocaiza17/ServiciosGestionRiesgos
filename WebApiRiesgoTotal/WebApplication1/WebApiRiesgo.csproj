@@ -181,7 +181,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>4259</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:4259/WebDemo/swagger/ui/index#/</IISUrl>
+          <IISUrl>http://localhost:4259/WebDemo/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
