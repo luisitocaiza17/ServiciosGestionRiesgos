@@ -12,7 +12,7 @@ namespace WebApplication1
         public static void Register(HttpConfiguration config)
         {
             // Web API configuration and services
-            var cors = new EnableCorsAttribute(WebConfigurationManager.AppSettings["rutaClienteApp"], "*", "*");
+            var cors = new EnableCorsAttribute("http://localhost:44522", "*", "*");
             config.EnableCors(cors);
             // Web API routes
             config.MapHttpAttributeRoutes();
