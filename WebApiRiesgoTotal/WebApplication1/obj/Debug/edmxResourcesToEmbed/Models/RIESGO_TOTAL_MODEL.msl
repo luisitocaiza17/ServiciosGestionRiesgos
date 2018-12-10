@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="RIESGO_TOTALModelStoreContainer" CdmEntityContainer="RIESGO_TOTAL_Entities">
+    <EntitySetMapping Name="ACTIVO">
+      <EntityTypeMapping TypeName="RIESGO_TOTALModel.ACTIVO">
+        <MappingFragment StoreEntitySet="ACTIVO">
+          <ScalarProperty Name="ID_ACTIVO" ColumnName="ID_ACTIVO" />
+          <ScalarProperty Name="ID_GRUPO_ACTIVO" ColumnName="ID_GRUPO_ACTIVO" />
+          <ScalarProperty Name="A_NOMBRE" ColumnName="A_NOMBRE" />
+          <ScalarProperty Name="A_DESCRIPCION" ColumnName="A_DESCRIPCION" />
+          <ScalarProperty Name="A_FECHA_CREACION" ColumnName="A_FECHA_CREACION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ACTIVO_VULNERABILIDAD">
+      <EntityTypeMapping TypeName="RIESGO_TOTALModel.ACTIVO_VULNERABILIDAD">
+        <MappingFragment StoreEntitySet="ACTIVO_VULNERABILIDAD">
+          <ScalarProperty Name="ID_VULNERABILIDAD" ColumnName="ID_VULNERABILIDAD" />
+          <ScalarProperty Name="ID_ACTIVO" ColumnName="ID_ACTIVO" />
+          <ScalarProperty Name="ID_ACITVO_VULNERABILIDAD" ColumnName="ID_ACITVO_VULNERABILIDAD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AMENAZAS">
+      <EntityTypeMapping TypeName="RIESGO_TOTALModel.AMENAZAS">
+        <MappingFragment StoreEntitySet="AMENAZAS">
+          <ScalarProperty Name="ID_AMENAZA" ColumnName="ID_AMENAZA" />
+          <ScalarProperty Name="AM_NOMBRE" ColumnName="AM_NOMBRE" />
+          <ScalarProperty Name="AM_DESCRIPCION" ColumnName="AM_DESCRIPCION" />
+          <ScalarProperty Name="AM_FECHA_CREACION" ColumnName="AM_FECHA_CREACION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ELEMENTOS_DEGRADACION">
+      <EntityTypeMapping TypeName="RIESGO_TOTALModel.ELEMENTOS_DEGRADACION">
+        <MappingFragment StoreEntitySet="ELEMENTOS_DEGRADACION">
+          <ScalarProperty Name="ID_DEGRADACION" ColumnName="ID_DEGRADACION" />
+          <ScalarProperty Name="ID_VULNERABILIDAD" ColumnName="ID_VULNERABILIDAD" />
+          <ScalarProperty Name="ID_ESCALA_DEGRADACION" ColumnName="ID_ESCALA_DEGRADACION" />
+          <ScalarProperty Name="D_NOMBRE" ColumnName="D_NOMBRE" />
+          <ScalarProperty Name="D_DESCRIPCION" ColumnName="D_DESCRIPCION" />
+          <ScalarProperty Name="D_FECHA_CREACION" ColumnName="D_FECHA_CREACION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ESCALA_DEGRADACION">
+      <EntityTypeMapping TypeName="RIESGO_TOTALModel.ESCALA_DEGRADACION">
+        <MappingFragment StoreEntitySet="ESCALA_DEGRADACION">
+          <ScalarProperty Name="ID_ESCALA_DEGRADACION" ColumnName="ID_ESCALA_DEGRADACION" />
+          <ScalarProperty Name="ID_DEGRADACION" ColumnName="ID_DEGRADACION" />
+          <ScalarProperty Name="E_D_NOMBRE" ColumnName="E_D_NOMBRE" />
+          <ScalarProperty Name="E_D_VALOR" ColumnName="E_D_VALOR" />
+          <ScalarProperty Name="E_D_FECHA_CREACION" ColumnName="E_D_FECHA_CREACION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ESCALA_FRECUENCIA">
+      <EntityTypeMapping TypeName="RIESGO_TOTALModel.ESCALA_FRECUENCIA">
+        <MappingFragment StoreEntitySet="ESCALA_FRECUENCIA">
+          <ScalarProperty Name="ID_ESCALA_FRECUENCIA" ColumnName="ID_ESCALA_FRECUENCIA" />
+          <ScalarProperty Name="E_F_NOMBRE" ColumnName="E_F_NOMBRE" />
+          <ScalarProperty Name="E_F_DESCRIPCION" ColumnName="E_F_DESCRIPCION" />
+          <ScalarProperty Name="E_F_FECHA_CREACION" ColumnName="E_F_FECHA_CREACION" />
+          <ScalarProperty Name="E_F_VALOR_LETRA" ColumnName="E_F_VALOR_LETRA" />
+          <ScalarProperty Name="E_F_VALOR" ColumnName="E_F_VALOR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GRUPO_ACTIVOS">
+      <EntityTypeMapping TypeName="RIESGO_TOTALModel.GRUPO_ACTIVOS">
+        <MappingFragment StoreEntitySet="GRUPO_ACTIVOS">
+          <ScalarProperty Name="ID_GRUPO_ACTIVO" ColumnName="ID_GRUPO_ACTIVO" />
+          <ScalarProperty Name="ID_ACTIVO" ColumnName="ID_ACTIVO" />
+          <ScalarProperty Name="G_A_NOMBRE" ColumnName="G_A_NOMBRE" />
+          <ScalarProperty Name="G_A_DESCRIPCION" ColumnName="G_A_DESCRIPCION" />
+          <ScalarProperty Name="G_A_FECHA_CREACION" ColumnName="G_A_FECHA_CREACION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MAPA_CALOR">
+      <EntityTypeMapping TypeName="RIESGO_TOTALModel.MAPA_CALOR">
+        <MappingFragment StoreEntitySet="MAPA_CALOR">
+          <ScalarProperty Name="ID_MAPA_CALOR" ColumnName="ID_MAPA_CALOR" />
+          <ScalarProperty Name="ID_ESCALA_FRECUENCIA" ColumnName="ID_ESCALA_FRECUENCIA" />
+          <ScalarProperty Name="PROMEDIO_IMPACTO_DESDE" ColumnName="PROMEDIO_IMPACTO_DESDE" />
+          <ScalarProperty Name="PROMEDIO_IMPACTO_HASTA" ColumnName="PROMEDIO_IMPACTO_HASTA" />
+          <ScalarProperty Name="RIESGO_DESDE" ColumnName="RIESGO_DESDE" />
+          <ScalarProperty Name="RIESGO_HASTA" ColumnName="RIESGO_HASTA" />
+          <ScalarProperty Name="COLOR" ColumnName="COLOR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VULNERABILIDADES">
+      <EntityTypeMapping TypeName="RIESGO_TOTALModel.VULNERABILIDADES">
+        <MappingFragment StoreEntitySet="VULNERABILIDADES">
+          <ScalarProperty Name="ID_VULNERABILIDAD" ColumnName="ID_VULNERABILIDAD" />
+          <ScalarProperty Name="V_NOMBRE" ColumnName="V_NOMBRE" />
+          <ScalarProperty Name="V_DESCRIPCION" ColumnName="V_DESCRIPCION" />
+          <ScalarProperty Name="V_FECHA_CREACION" ColumnName="V_FECHA_CREACION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VULNERABILIDADES_AMENAZAS">
+      <EntityTypeMapping TypeName="RIESGO_TOTALModel.VULNERABILIDADES_AMENAZAS">
+        <MappingFragment StoreEntitySet="VULNERABILIDADES_AMENAZAS">
+          <ScalarProperty Name="ID_AMENAZA" ColumnName="ID_AMENAZA" />
+          <ScalarProperty Name="ID_VULNERABILIDAD" ColumnName="ID_VULNERABILIDAD" />
+          <ScalarProperty Name="ID_VULNERABILIDADES_AMENAZAS" ColumnName="ID_VULNERABILIDADES_AMENAZAS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

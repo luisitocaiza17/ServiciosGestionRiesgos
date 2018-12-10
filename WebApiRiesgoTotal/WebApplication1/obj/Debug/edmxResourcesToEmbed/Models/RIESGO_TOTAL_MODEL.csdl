@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="RIESGO_TOTALModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="ACTIVO">
+    <Key>
+      <PropertyRef Name="ID_ACTIVO" />
+    </Key>
+    <Property Name="ID_ACTIVO" Type="Int32" Nullable="false" />
+    <Property Name="ID_GRUPO_ACTIVO" Type="Int32" />
+    <Property Name="A_NOMBRE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="A_DESCRIPCION" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="A_FECHA_CREACION" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="ACTIVO_VULNERABILIDAD">
+    <Key>
+      <PropertyRef Name="ID_VULNERABILIDAD" />
+      <PropertyRef Name="ID_ACTIVO" />
+      <PropertyRef Name="ID_ACITVO_VULNERABILIDAD" />
+    </Key>
+    <Property Name="ID_VULNERABILIDAD" Type="Int32" Nullable="false" />
+    <Property Name="ID_ACTIVO" Type="Int32" Nullable="false" />
+    <Property Name="ID_ACITVO_VULNERABILIDAD" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AMENAZAS">
+    <Key>
+      <PropertyRef Name="ID_AMENAZA" />
+    </Key>
+    <Property Name="ID_AMENAZA" Type="Int32" Nullable="false" />
+    <Property Name="AM_NOMBRE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="AM_DESCRIPCION" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="AM_FECHA_CREACION" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="ELEMENTOS_DEGRADACION">
+    <Key>
+      <PropertyRef Name="ID_DEGRADACION" />
+    </Key>
+    <Property Name="ID_DEGRADACION" Type="Int32" Nullable="false" />
+    <Property Name="ID_VULNERABILIDAD" Type="Int32" />
+    <Property Name="ID_ESCALA_DEGRADACION" Type="Int32" />
+    <Property Name="D_NOMBRE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="D_DESCRIPCION" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="D_FECHA_CREACION" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="ESCALA_DEGRADACION">
+    <Key>
+      <PropertyRef Name="ID_ESCALA_DEGRADACION" />
+    </Key>
+    <Property Name="ID_ESCALA_DEGRADACION" Type="Int32" Nullable="false" />
+    <Property Name="ID_DEGRADACION" Type="Int32" />
+    <Property Name="E_D_NOMBRE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="E_D_VALOR" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="E_D_FECHA_CREACION" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="ESCALA_FRECUENCIA">
+    <Key>
+      <PropertyRef Name="ID_ESCALA_FRECUENCIA" />
+    </Key>
+    <Property Name="ID_ESCALA_FRECUENCIA" Type="Int32" Nullable="false" />
+    <Property Name="E_F_NOMBRE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="E_F_DESCRIPCION" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="E_F_FECHA_CREACION" Type="DateTime" Precision="3" />
+    <Property Name="E_F_VALOR_LETRA" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="E_F_VALOR" Type="Decimal" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="GRUPO_ACTIVOS">
+    <Key>
+      <PropertyRef Name="ID_GRUPO_ACTIVO" />
+    </Key>
+    <Property Name="ID_GRUPO_ACTIVO" Type="Int32" Nullable="false" />
+    <Property Name="ID_ACTIVO" Type="Int32" />
+    <Property Name="G_A_NOMBRE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="G_A_DESCRIPCION" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="G_A_FECHA_CREACION" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="MAPA_CALOR">
+    <Key>
+      <PropertyRef Name="ID_MAPA_CALOR" />
+    </Key>
+    <Property Name="ID_MAPA_CALOR" Type="Int32" Nullable="false" />
+    <Property Name="ID_ESCALA_FRECUENCIA" Type="Int32" />
+    <Property Name="PROMEDIO_IMPACTO_DESDE" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="PROMEDIO_IMPACTO_HASTA" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="RIESGO_DESDE" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="RIESGO_HASTA" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="COLOR" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="VULNERABILIDADES">
+    <Key>
+      <PropertyRef Name="ID_VULNERABILIDAD" />
+    </Key>
+    <Property Name="ID_VULNERABILIDAD" Type="Int32" Nullable="false" />
+    <Property Name="V_NOMBRE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="V_DESCRIPCION" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="V_FECHA_CREACION" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="VULNERABILIDADES_AMENAZAS">
+    <Key>
+      <PropertyRef Name="ID_AMENAZA" />
+      <PropertyRef Name="ID_VULNERABILIDAD" />
+      <PropertyRef Name="ID_VULNERABILIDADES_AMENAZAS" />
+    </Key>
+    <Property Name="ID_AMENAZA" Type="Int32" Nullable="false" />
+    <Property Name="ID_VULNERABILIDAD" Type="Int32" Nullable="false" />
+    <Property Name="ID_VULNERABILIDADES_AMENAZAS" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="RIESGO_TOTAL_Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ACTIVO" EntityType="Self.ACTIVO" />
+    <EntitySet Name="ACTIVO_VULNERABILIDAD" EntityType="Self.ACTIVO_VULNERABILIDAD" />
+    <EntitySet Name="AMENAZAS" EntityType="Self.AMENAZAS" />
+    <EntitySet Name="ELEMENTOS_DEGRADACION" EntityType="Self.ELEMENTOS_DEGRADACION" />
+    <EntitySet Name="ESCALA_DEGRADACION" EntityType="Self.ESCALA_DEGRADACION" />
+    <EntitySet Name="ESCALA_FRECUENCIA" EntityType="Self.ESCALA_FRECUENCIA" />
+    <EntitySet Name="GRUPO_ACTIVOS" EntityType="Self.GRUPO_ACTIVOS" />
+    <EntitySet Name="MAPA_CALOR" EntityType="Self.MAPA_CALOR" />
+    <EntitySet Name="VULNERABILIDADES" EntityType="Self.VULNERABILIDADES" />
+    <EntitySet Name="VULNERABILIDADES_AMENAZAS" EntityType="Self.VULNERABILIDADES_AMENAZAS" />
+  </EntityContainer>
+</Schema>

@@ -94,3 +94,25 @@ C:\Proyecto_Riesgo\Servicios\ServiciosGestionRiesgos\WebApiRiesgoTotal\WebApplic
 C:\Proyecto_Riesgo\Servicios\ServiciosGestionRiesgos\WebApiRiesgoTotal\WebApplication1\obj\Debug\WebApiRiesgo.csprojResolveAssemblyReference.cache
 C:\Proyecto_Riesgo\Servicios\ServiciosGestionRiesgos\WebApiRiesgoTotal\WebApplication1\obj\Debug\WebApplication1.dll
 C:\Proyecto_Riesgo\Servicios\ServiciosGestionRiesgos\WebApiRiesgoTotal\WebApplication1\obj\Debug\WebApplication1.pdb
+D:\Maestria_Software\Gestion de Riesgos\AppElReisgo\ServiciosGestionRiesgos\WebApiRiesgoTotal\WebApplication1\bin\Antlr3.Runtime.dll
+D:\Maestria_Software\Gestion de Riesgos\AppElReisgo\ServiciosGestionRiesgos\WebApiRiesgoTotal\WebApplication1\bin\EntityFramework.dll
+D:\Maestria_Software\Gestion de Riesgos\AppElReisgo\ServiciosGestionRiesgos\WebApiRiesgoTotal\WebApplication1\bin\EntityFramework.SqlServer.dll
+D:\Maestria_Software\Gestion de Riesgos\AppElReisgo\ServiciosGestionRiesgos\WebApiRiesgoTotal\WebApplication1\bin\System.Web.Helpers.dll
+D:\Maestria_Software\Gestion de Riesgos\AppElReisgo\ServiciosGestionRiesgos\WebApiRiesgoTotal\WebApplication1\bin\System.Web.Mvc.dll
+D:\Maestria_Software\Gestion de Riesgos\AppElReisgo\ServiciosGestionRiesgos\WebApiRiesgoTotal\WebApplication1\bin\System.Web.Optimization.dll
+D:\Maestria_Software\Gestion de Riesgos\AppElReisgo\ServiciosGestionRiesgos\WebApiRiesgoTotal\WebApplication1\bin\System.Web.Razor.dll
+D:\Maestria_Software\Gestion de Riesgos\AppElReisgo\ServiciosGestionRiesgos\WebApiRiesgoTotal\WebApplication1\bin\System.Web.WebPages.Deployment.dll
+D:\Maestria_Software\Gestion de Riesgos\AppElReisgo\ServiciosGestionRiesgos\WebApiRiesgoTotal\WebApplication1\bin\System.Web.WebPages.dll
+D:\Maestria_Software\Gestion de Riesgos\AppElReisgo\ServiciosGestionRiesgos\WebApiRiesgoTotal\WebApplication1\bin\System.Web.WebPages.Razor.dll
+D:\Maestria_Software\Gestion de Riesgos\AppElReisgo\ServiciosGestionRiesgos\WebApiRiesgoTotal\WebApplication1\bin\WebGrease.dll
+D:\Maestria_Software\Gestion de Riesgos\AppElReisgo\ServiciosGestionRiesgos\WebApiRiesgoTotal\WebApplication1\bin\Antlr3.Runtime.pdb
+D:\Maestria_Software\Gestion de Riesgos\AppElReisgo\ServiciosGestionRiesgos\WebApiRiesgoTotal\WebApplication1\bin\EntityFramework.xml
+D:\Maestria_Software\Gestion de Riesgos\AppElReisgo\ServiciosGestionRiesgos\WebApiRiesgoTotal\WebApplication1\bin\EntityFramework.SqlServer.xml
+D:\Maestria_Software\Gestion de Riesgos\AppElReisgo\ServiciosGestionRiesgos\WebApiRiesgoTotal\WebApplication1\bin\System.Web.Helpers.xml
+D:\Maestria_Software\Gestion de Riesgos\AppElReisgo\ServiciosGestionRiesgos\WebApiRiesgoTotal\WebApplication1\bin\System.Web.Mvc.xml
+D:\Maestria_Software\Gestion de Riesgos\AppElReisgo\ServiciosGestionRiesgos\WebApiRiesgoTotal\WebApplication1\bin\System.Web.Optimization.xml
+D:\Maestria_Software\Gestion de Riesgos\AppElReisgo\ServiciosGestionRiesgos\WebApiRiesgoTotal\WebApplication1\bin\System.Web.Razor.xml
+D:\Maestria_Software\Gestion de Riesgos\AppElReisgo\ServiciosGestionRiesgos\WebApiRiesgoTotal\WebApplication1\bin\System.Web.WebPages.xml
+D:\Maestria_Software\Gestion de Riesgos\AppElReisgo\ServiciosGestionRiesgos\WebApiRiesgoTotal\WebApplication1\bin\System.Web.WebPages.Deployment.xml
+D:\Maestria_Software\Gestion de Riesgos\AppElReisgo\ServiciosGestionRiesgos\WebApiRiesgoTotal\WebApplication1\bin\System.Web.WebPages.Razor.xml
+D:\Maestria_Software\Gestion de Riesgos\AppElReisgo\ServiciosGestionRiesgos\WebApiRiesgoTotal\WebApplication1\bin\Newtonsoft.Json.pdb
