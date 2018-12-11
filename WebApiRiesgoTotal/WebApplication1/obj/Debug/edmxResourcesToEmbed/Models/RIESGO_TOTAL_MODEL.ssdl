@@ -34,8 +34,6 @@
       <PropertyRef Name="ID_DEGRADACION" />
     </Key>
     <Property Name="ID_DEGRADACION" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="ID_VULNERABILIDAD" Type="int" />
-    <Property Name="ID_ESCALA_DEGRADACION" Type="int" />
     <Property Name="D_NOMBRE" Type="varchar" MaxLength="50" />
     <Property Name="D_DESCRIPCION" Type="varchar" MaxLength="200" />
     <Property Name="D_FECHA_CREACION" Type="datetime" />
@@ -45,7 +43,6 @@
       <PropertyRef Name="ID_ESCALA_DEGRADACION" />
     </Key>
     <Property Name="ID_ESCALA_DEGRADACION" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="ID_DEGRADACION" Type="int" />
     <Property Name="E_D_NOMBRE" Type="varchar" MaxLength="50" />
     <Property Name="E_D_VALOR" Type="decimal" Precision="18" Scale="0" />
     <Property Name="E_D_FECHA_CREACION" Type="datetime" />

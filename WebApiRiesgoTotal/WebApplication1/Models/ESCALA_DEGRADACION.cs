@@ -15,7 +15,6 @@ namespace WebApplication1.Models
     public partial class ESCALA_DEGRADACION
     {
         public int ID_ESCALA_DEGRADACION { get; set; }
-        public Nullable<int> ID_DEGRADACION { get; set; }
         public string E_D_NOMBRE { get; set; }
         public Nullable<decimal> E_D_VALOR { get; set; }
         public Nullable<System.DateTime> E_D_FECHA_CREACION { get; set; }

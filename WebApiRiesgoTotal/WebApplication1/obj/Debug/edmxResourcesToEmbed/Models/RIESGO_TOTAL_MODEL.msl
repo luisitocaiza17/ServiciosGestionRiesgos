@@ -35,8 +35,6 @@
       <EntityTypeMapping TypeName="RIESGO_TOTALModel.ELEMENTOS_DEGRADACION">
         <MappingFragment StoreEntitySet="ELEMENTOS_DEGRADACION">
           <ScalarProperty Name="ID_DEGRADACION" ColumnName="ID_DEGRADACION" />
-          <ScalarProperty Name="ID_VULNERABILIDAD" ColumnName="ID_VULNERABILIDAD" />
-          <ScalarProperty Name="ID_ESCALA_DEGRADACION" ColumnName="ID_ESCALA_DEGRADACION" />
           <ScalarProperty Name="D_NOMBRE" ColumnName="D_NOMBRE" />
           <ScalarProperty Name="D_DESCRIPCION" ColumnName="D_DESCRIPCION" />
           <ScalarProperty Name="D_FECHA_CREACION" ColumnName="D_FECHA_CREACION" />
@@ -47,7 +45,6 @@
       <EntityTypeMapping TypeName="RIESGO_TOTALModel.ESCALA_DEGRADACION">
         <MappingFragment StoreEntitySet="ESCALA_DEGRADACION">
           <ScalarProperty Name="ID_ESCALA_DEGRADACION" ColumnName="ID_ESCALA_DEGRADACION" />
-          <ScalarProperty Name="ID_DEGRADACION" ColumnName="ID_DEGRADACION" />
           <ScalarProperty Name="E_D_NOMBRE" ColumnName="E_D_NOMBRE" />
           <ScalarProperty Name="E_D_VALOR" ColumnName="E_D_VALOR" />
           <ScalarProperty Name="E_D_FECHA_CREACION" ColumnName="E_D_FECHA_CREACION" />

@@ -15,8 +15,6 @@ namespace WebApplication1.Models
     public partial class ELEMENTOS_DEGRADACION
     {
         public int ID_DEGRADACION { get; set; }
-        public Nullable<int> ID_VULNERABILIDAD { get; set; }
-        public Nullable<int> ID_ESCALA_DEGRADACION { get; set; }
         public string D_NOMBRE { get; set; }
         public string D_DESCRIPCION { get; set; }
         public Nullable<System.DateTime> D_FECHA_CREACION { get; set; }

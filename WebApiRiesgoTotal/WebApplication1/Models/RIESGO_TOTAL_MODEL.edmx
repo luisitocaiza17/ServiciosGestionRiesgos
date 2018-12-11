@@ -39,8 +39,6 @@
             <PropertyRef Name="ID_DEGRADACION" />
           </Key>
           <Property Name="ID_DEGRADACION" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="ID_VULNERABILIDAD" Type="int" />
-          <Property Name="ID_ESCALA_DEGRADACION" Type="int" />
           <Property Name="D_NOMBRE" Type="varchar" MaxLength="50" />
           <Property Name="D_DESCRIPCION" Type="varchar" MaxLength="200" />
           <Property Name="D_FECHA_CREACION" Type="datetime" />
@@ -50,7 +48,6 @@
             <PropertyRef Name="ID_ESCALA_DEGRADACION" />
           </Key>
           <Property Name="ID_ESCALA_DEGRADACION" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="ID_DEGRADACION" Type="int" />
           <Property Name="E_D_NOMBRE" Type="varchar" MaxLength="50" />
           <Property Name="E_D_VALOR" Type="decimal" Precision="18" Scale="0" />
           <Property Name="E_D_FECHA_CREACION" Type="datetime" />
@@ -157,8 +154,6 @@
             <PropertyRef Name="ID_DEGRADACION" />
           </Key>
           <Property Name="ID_DEGRADACION" Type="Int32" Nullable="false" />
-          <Property Name="ID_VULNERABILIDAD" Type="Int32" />
-          <Property Name="ID_ESCALA_DEGRADACION" Type="Int32" />
           <Property Name="D_NOMBRE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="D_DESCRIPCION" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
           <Property Name="D_FECHA_CREACION" Type="DateTime" Precision="3" />
@@ -168,7 +163,6 @@
             <PropertyRef Name="ID_ESCALA_DEGRADACION" />
           </Key>
           <Property Name="ID_ESCALA_DEGRADACION" Type="Int32" Nullable="false" />
-          <Property Name="ID_DEGRADACION" Type="Int32" />
           <Property Name="E_D_NOMBRE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="E_D_VALOR" Type="Decimal" Precision="18" Scale="0" />
           <Property Name="E_D_FECHA_CREACION" Type="DateTime" Precision="3" />
@@ -277,8 +271,6 @@
             <EntityTypeMapping TypeName="RIESGO_TOTALModel.ELEMENTOS_DEGRADACION">
               <MappingFragment StoreEntitySet="ELEMENTOS_DEGRADACION">
                 <ScalarProperty Name="ID_DEGRADACION" ColumnName="ID_DEGRADACION" />
-                <ScalarProperty Name="ID_VULNERABILIDAD" ColumnName="ID_VULNERABILIDAD" />
-                <ScalarProperty Name="ID_ESCALA_DEGRADACION" ColumnName="ID_ESCALA_DEGRADACION" />
                 <ScalarProperty Name="D_NOMBRE" ColumnName="D_NOMBRE" />
                 <ScalarProperty Name="D_DESCRIPCION" ColumnName="D_DESCRIPCION" />
                 <ScalarProperty Name="D_FECHA_CREACION" ColumnName="D_FECHA_CREACION" />
@@ -289,7 +281,6 @@
             <EntityTypeMapping TypeName="RIESGO_TOTALModel.ESCALA_DEGRADACION">
               <MappingFragment StoreEntitySet="ESCALA_DEGRADACION">
                 <ScalarProperty Name="ID_ESCALA_DEGRADACION" ColumnName="ID_ESCALA_DEGRADACION" />
-                <ScalarProperty Name="ID_DEGRADACION" ColumnName="ID_DEGRADACION" />
                 <ScalarProperty Name="E_D_NOMBRE" ColumnName="E_D_NOMBRE" />
                 <ScalarProperty Name="E_D_VALOR" ColumnName="E_D_VALOR" />
                 <ScalarProperty Name="E_D_FECHA_CREACION" ColumnName="E_D_FECHA_CREACION" />
