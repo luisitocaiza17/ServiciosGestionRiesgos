@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="RIESGO_TOTALModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ACTIVO">
+    <Key>
+      <PropertyRef Name="ID_ACTIVO" />
+    </Key>
+    <Property Name="ID_ACTIVO" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ID_GRUPO_ACTIVO" Type="int" />
+    <Property Name="A_NOMBRE" Type="varchar" MaxLength="50" />
+    <Property Name="A_DESCRIPCION" Type="varchar" MaxLength="200" />
+    <Property Name="A_FECHA_CREACION" Type="datetime" />
+  </EntityType>
+  <EntityType Name="ACTIVO_VULNERABILIDAD">
+    <Key>
+      <PropertyRef Name="ID_VULNERABILIDAD" />
+      <PropertyRef Name="ID_ACTIVO" />
+      <PropertyRef Name="ID_ACITVO_VULNERABILIDAD" />
+    </Key>
+    <Property Name="ID_VULNERABILIDAD" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ID_ACTIVO" Type="int" Nullable="false" />
+    <Property Name="ID_ACITVO_VULNERABILIDAD" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AMENAZAS">
+    <Key>
+      <PropertyRef Name="ID_AMENAZA" />
+    </Key>
+    <Property Name="ID_AMENAZA" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AM_NOMBRE" Type="varchar" MaxLength="50" />
+    <Property Name="AM_DESCRIPCION" Type="varchar" MaxLength="200" />
+    <Property Name="AM_FECHA_CREACION" Type="datetime" />
+  </EntityType>
+  <EntityType Name="ELEMENTOS_DEGRADACION">
+    <Key>
+      <PropertyRef Name="ID_DEGRADACION" />
+    </Key>
+    <Property Name="ID_DEGRADACION" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="D_NOMBRE" Type="varchar" MaxLength="50" />
+    <Property Name="D_DESCRIPCION" Type="varchar" MaxLength="200" />
+    <Property Name="D_FECHA_CREACION" Type="datetime" />
+  </EntityType>
+  <EntityType Name="ESCALA_DEGRADACION">
+    <Key>
+      <PropertyRef Name="ID_ESCALA_DEGRADACION" />
+    </Key>
+    <Property Name="ID_ESCALA_DEGRADACION" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="E_D_NOMBRE" Type="varchar" MaxLength="50" />
+    <Property Name="E_D_VALOR" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="E_D_FECHA_CREACION" Type="datetime" />
+  </EntityType>
+  <EntityType Name="ESCALA_FRECUENCIA">
+    <Key>
+      <PropertyRef Name="ID_ESCALA_FRECUENCIA" />
+    </Key>
+    <Property Name="ID_ESCALA_FRECUENCIA" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="E_F_NOMBRE" Type="varchar" MaxLength="50" />
+    <Property Name="E_F_DESCRIPCION" Type="varchar" MaxLength="200" />
+    <Property Name="E_F_FECHA_CREACION" Type="datetime" />
+    <Property Name="E_F_VALOR_LETRA" Type="varchar" MaxLength="5" />
+    <Property Name="E_F_VALOR" Type="decimal" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="GRUPO_ACTIVOS">
+    <Key>
+      <PropertyRef Name="ID_GRUPO_ACTIVO" />
+    </Key>
+    <Property Name="ID_GRUPO_ACTIVO" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ID_ACTIVO" Type="int" />
+    <Property Name="G_A_NOMBRE" Type="varchar" MaxLength="50" />
+    <Property Name="G_A_DESCRIPCION" Type="varchar" MaxLength="200" />
+    <Property Name="G_A_FECHA_CREACION" Type="datetime" />
+  </EntityType>
+  <EntityType Name="MAPA_CALOR">
+    <Key>
+      <PropertyRef Name="ID_MAPA_CALOR" />
+    </Key>
+    <Property Name="ID_MAPA_CALOR" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ID_ESCALA_FRECUENCIA" Type="int" />
+    <Property Name="PROMEDIO_IMPACTO_DESDE" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="PROMEDIO_IMPACTO_HASTA" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="RIESGO_DESDE" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="RIESGO_HASTA" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="COLOR" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="VULNERABILIDADES">
+    <Key>
+      <PropertyRef Name="ID_VULNERABILIDAD" />
+    </Key>
+    <Property Name="ID_VULNERABILIDAD" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="V_NOMBRE" Type="varchar" MaxLength="50" />
+    <Property Name="V_DESCRIPCION" Type="varchar" MaxLength="200" />
+    <Property Name="V_FECHA_CREACION" Type="datetime" />
+  </EntityType>
+  <EntityType Name="VULNERABILIDADES_AMENAZAS">
+    <Key>
+      <PropertyRef Name="ID_AMENAZA" />
+      <PropertyRef Name="ID_VULNERABILIDAD" />
+      <PropertyRef Name="ID_VULNERABILIDADES_AMENAZAS" />
+    </Key>
+    <Property Name="ID_AMENAZA" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ID_VULNERABILIDAD" Type="int" Nullable="false" />
+    <Property Name="ID_VULNERABILIDADES_AMENAZAS" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="RIESGO_TOTALModelStoreContainer">
+    <EntitySet Name="ACTIVO" EntityType="Self.ACTIVO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ACTIVO_VULNERABILIDAD" EntityType="Self.ACTIVO_VULNERABILIDAD" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AMENAZAS" EntityType="Self.AMENAZAS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ELEMENTOS_DEGRADACION" EntityType="Self.ELEMENTOS_DEGRADACION" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ESCALA_DEGRADACION" EntityType="Self.ESCALA_DEGRADACION" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ESCALA_FRECUENCIA" EntityType="Self.ESCALA_FRECUENCIA" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GRUPO_ACTIVOS" EntityType="Self.GRUPO_ACTIVOS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MAPA_CALOR" EntityType="Self.MAPA_CALOR" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="VULNERABILIDADES" EntityType="Self.VULNERABILIDADES" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="VULNERABILIDADES_AMENAZAS" EntityType="Self.VULNERABILIDADES_AMENAZAS" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

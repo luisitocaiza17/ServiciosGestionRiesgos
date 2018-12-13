@@ -4,6 +4,186 @@
         <name>WebApplication1</name>
     </assembly>
     <members>
+        <member name="T:Saludsa.WebApiBrokers.Controllers.VulnerabilidadSEController">
+            <summary>
+            url para probar el servicio http://localhost:4259/WebDemo/swagger/ui/index#/
+            Servicios de Usuario
+            </summary>
+            <seealso cref="T:System.Web.Http.ApiController" />
+        </member>
+        <member name="M:Saludsa.WebApiBrokers.Controllers.VulnerabilidadSEController.TraerVulnerabilidades">
+            <summary>
+            En la cabezaran van los parametros que se solicitaran
+            </summary>
+            <returns>
+            HttpResponseMessage
+            </returns>
+            <response code="200">Si se ejecuta con éxito y retorna el valor esperado</response>
+            <response code="400">Error datos enviados en la cabecera</response>
+            <response code="500">Si existe un error interno</response>
+        </member>
+        <member name="M:Saludsa.WebApiBrokers.Controllers.VulnerabilidadSEController.TraerVulnerabilidad(System.Int32)">
+            <summary>
+            En la cabezaran van los parametros que se solicitaran
+            </summary>
+            <param name="id_Amenaza">Cabecera de la llamada</param>
+            <returns>
+            HttpResponseMessage
+            </returns>
+            <response code="200">Si se ejecuta con éxito y retorna el valor esperado</response>
+            <response code="400">Error datos enviados en la cabecera</response>
+            <response code="500">Si existe un error interno</response>
+        </member>
+        <member name="T:Saludsa.WebApiBrokers.Controllers.MapaCalorController">
+            <summary>
+            url para probar el servicio http://localhost:4259/WebDemo/swagger/ui/index#/
+            Servicios de Usuario
+            </summary>
+            <seealso cref="T:System.Web.Http.ApiController" />
+        </member>
+        <member name="M:Saludsa.WebApiBrokers.Controllers.MapaCalorController.TraerMapas">
+            <summary>
+            En la cabezaran van los parametros que se solicitaran
+            </summary>
+            <returns>
+            HttpResponseMessage
+            </returns>
+            <response code="200">Si se ejecuta con éxito y retorna el valor esperado</response>
+            <response code="400">Error datos enviados en la cabecera</response>
+            <response code="500">Si existe un error interno</response>
+        </member>
+        <member name="M:Saludsa.WebApiBrokers.Controllers.MapaCalorController.TraerMapa(System.Int32)">
+            <summary>
+            En la cabezaran van los parametros que se solicitaran
+            </summary>
+            <param name="id_Amenaza">Cabecera de la llamada</param>
+            <returns>
+            HttpResponseMessage
+            </returns>
+            <response code="200">Si se ejecuta con éxito y retorna el valor esperado</response>
+            <response code="400">Error datos enviados en la cabecera</response>
+            <response code="500">Si existe un error interno</response>
+        </member>
+        <member name="T:Saludsa.WebApiBrokers.Controllers.EscalaFrecuenciaController">
+            <summary>
+            url para probar el servicio http://localhost:4259/WebDemo/swagger/ui/index#/
+            Servicios de Usuario
+            </summary>
+            <seealso cref="T:System.Web.Http.ApiController" />
+        </member>
+        <member name="M:Saludsa.WebApiBrokers.Controllers.EscalaFrecuenciaController.TraerFrecuencias">
+            <summary>
+            En la cabezaran van los parametros que se solicitaran
+            </summary>
+            <returns>
+            HttpResponseMessage
+            </returns>
+            <response code="200">Si se ejecuta con éxito y retorna el valor esperado</response>
+            <response code="400">Error datos enviados en la cabecera</response>
+            <response code="500">Si existe un error interno</response>
+        </member>
+        <member name="M:Saludsa.WebApiBrokers.Controllers.EscalaFrecuenciaController.TraerFrecuencia(System.Int32)">
+            <summary>
+            En la cabezaran van los parametros que se solicitaran
+            </summary>
+            <param name="id_Amenaza">Cabecera de la llamada</param>
+            <returns>
+            HttpResponseMessage
+            </returns>
+            <response code="200">Si se ejecuta con éxito y retorna el valor esperado</response>
+            <response code="400">Error datos enviados en la cabecera</response>
+            <response code="500">Si existe un error interno</response>
+        </member>
+        <member name="T:Saludsa.WebApiBrokers.Controllers.AmenazaController">
+            <summary>
+            url para probar el servicio http://localhost:4259/WebDemo/swagger/ui/index#/
+            Servicios de Usuario
+            </summary>
+            <seealso cref="T:System.Web.Http.ApiController" />
+        </member>
+        <member name="M:Saludsa.WebApiBrokers.Controllers.AmenazaController.TraerAmenazas">
+            <summary>
+            En la cabezaran van los parametros que se solicitaran
+            </summary>
+            <returns>
+            HttpResponseMessage
+            </returns>
+            <response code="200">Si se ejecuta con éxito y retorna el valor esperado</response>
+            <response code="400">Error datos enviados en la cabecera</response>
+            <response code="500">Si existe un error interno</response>
+        </member>
+        <member name="M:Saludsa.WebApiBrokers.Controllers.AmenazaController.TraerAmenaza(System.Int32)">
+            <summary>
+            En la cabezaran van los parametros que se solicitaran
+            </summary>
+            <param name="id_Amenaza">Cabecera de la llamada</param>
+            <returns>
+            HttpResponseMessage
+            </returns>
+            <response code="200">Si se ejecuta con éxito y retorna el valor esperado</response>
+            <response code="400">Error datos enviados en la cabecera</response>
+            <response code="500">Si existe un error interno</response>
+        </member>
+        <member name="T:Saludsa.WebApiBrokers.Controllers.EscalaDegradacionController">
+            <summary>
+            url para probar el servicio http://localhost:4259/WebDemo/swagger/ui/index#/
+            Servicios de Usuario
+            </summary>
+            <seealso cref="T:System.Web.Http.ApiController" />
+        </member>
+        <member name="M:Saludsa.WebApiBrokers.Controllers.EscalaDegradacionController.TraerEscalaDegradacion">
+            <summary>
+            En la cabezaran van los parametros que se solicitaran
+            </summary>
+            <returns>
+            HttpResponseMessage
+            </returns>
+            <response code="200">Si se ejecuta con éxito y retorna el valor esperado</response>
+            <response code="400">Error datos enviados en la cabecera</response>
+            <response code="500">Si existe un error interno</response>
+        </member>
+        <member name="M:Saludsa.WebApiBrokers.Controllers.EscalaDegradacionController.TraerElementoDegradacionEspecifica(System.Int32)">
+            <summary>
+            En la cabezaran van los parametros que se solicitaran
+            </summary>
+            <param name="id_Elemento_Degradacion">Cabecera de la llamada</param>
+            <returns>
+            HttpResponseMessage
+            </returns>
+            <response code="200">Si se ejecuta con éxito y retorna el valor esperado</response>
+            <response code="400">Error datos enviados en la cabecera</response>
+            <response code="500">Si existe un error interno</response>
+        </member>
+        <member name="T:Saludsa.WebApiBrokers.Controllers.ElementoDegradacionController">
+            <summary>
+            url para probar el servicio http://localhost:4259/WebDemo/swagger/ui/index#/
+            Servicios de Usuario
+            </summary>
+            <seealso cref="T:System.Web.Http.ApiController" />
+        </member>
+        <member name="M:Saludsa.WebApiBrokers.Controllers.ElementoDegradacionController.TraerElementosDegradacion">
+            <summary>
+            En la cabezaran van los parametros que se solicitaran
+            </summary>
+            <returns>
+            HttpResponseMessage
+            </returns>
+            <response code="200">Si se ejecuta con éxito y retorna el valor esperado</response>
+            <response code="400">Error datos enviados en la cabecera</response>
+            <response code="500">Si existe un error interno</response>
+        </member>
+        <member name="M:Saludsa.WebApiBrokers.Controllers.ElementoDegradacionController.TraerElementoDegradacionEspecifica(System.Int32)">
+            <summary>
+            En la cabezaran van los parametros que se solicitaran
+            </summary>
+            <param name="id_Elemento_Degradacion">Cabecera de la llamada</param>
+            <returns>
+            HttpResponseMessage
+            </returns>
+            <response code="200">Si se ejecuta con éxito y retorna el valor esperado</response>
+            <response code="400">Error datos enviados en la cabecera</response>
+            <response code="500">Si existe un error interno</response>
+        </member>
         <member name="T:Saludsa.WebApiBrokers.Controllers.LoginController">
             <summary>
             url para probar el servicio http://localhost:4259/WebDemo/swagger/ui/index#/
